@@ -1,0 +1,2 @@
+python freeze_model.py  # 原模型基于TensorFlow 1.5生成，当TensorFlow版本不兼容时，可用于转化Deep Sort模型文件(mars-small128.pb)至兼容版本
+generate_detections.py  # 用于生成相关人员重新识别的功能，适用于使用余弦相似度比较行人边界框的视觉外观

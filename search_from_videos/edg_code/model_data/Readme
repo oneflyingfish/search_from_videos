@@ -1,0 +1,6 @@
+coco_classes.txt        # yolo检测对象
+mars-small128.pb        # Deep Sort模型，来自论文发布模型：https://drive.google.com/drive/folders/1m2ebLHB2JThZC8vWGDYEKGsevLssSkjo
+                        # F. Yu, W. Li, Q. Li, Y. Liu, X. Shi, J. Yan. POI: Multiple Object Tracking with High Performance Detection and Appearance Feature. In BMTT, SenseTime Group Limited, 2016.
+
+../yolov3.weights       # Darknet YOLO预设模型，网站：http://pjreddie.com/darknet/yolo/
+yolo.h5                 # YOLO模型转keras模型，指令：python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5

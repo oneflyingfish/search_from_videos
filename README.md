@@ -46,19 +46,22 @@ pillow
 
 ## 运行说明
 #### code for edg（执行过程耗时）
+下面的main.py统一指代为 search_from_videos/edg_code/main.py
 ```
 # 将待处理的单个/多个视频文件（支持mp4）放入main.py中row_path指定的目录中
 
-python search_from_videos/edg_code/main.py                                              # 根据环境自动修正设置
+python main.py      # 根据环境自动修正设置
 
 # 程序将自动在main.py中video_path和save_path指定路径生成处理参数
 ```
+
 #### code for client（运行过程快速）
+下面的main.py统一指代为 search_from_videos/client/main.py
 ```
 # 在main.py中image_path指定待搜索的目标人物的照片
 # main.py中的pre_dict和result_dict指向为edg_code生成的对应目录video_path和save_path
 
-python search_from_videos/client/main.py                                                # 根据环境自动修正设置
+python main.py      # 根据环境自动修正设置
 
 # 程序会自动在main.py中search_result_path指定路径生成搜索结果
 ```

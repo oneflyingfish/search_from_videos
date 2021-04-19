@@ -59,6 +59,8 @@ python search_from_videos/edg_code/main.py                                      
 # main.py中的pre_dict和result_dict指向为edg_code生成的对应目录video_path和save_path
 
 python search_from_videos/client/main.py                                                # 根据环境自动修正设置
+
+# 程序会自动在main.py中search_result_path指定路径生成搜索结果
 ```
 
 ## 修改方向

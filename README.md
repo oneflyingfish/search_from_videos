@@ -44,6 +44,26 @@ pillow
 3. 通过对置信度排序，并截取适当比例的结果，作为搜索结果输出
 ```
 
+## 运行说明
+#### code for edg（执行过程耗时）
+```
+# 将待处理的单个/多个视频文件（支持mp4）放入main.py中row_path指定的目录中
+
+python search_from_videos/edg_code/main.py                                              # 根据环境自动修正设置
+
+# 程序将自动在main.py中video_path和save_path指定路径生成处理参数
+```
+#### code for client（运行过程快速）
+```
+# 在main.py中image_path指定待搜索的目标人物的照片
+# main.py中的pre_dict和result_dict指向为edg_code生成的对应目录video_path和save_path
+
+python search_from_videos/client/main.py                                                # 根据环境自动修正设置
+```
+
+## 修改方向
+本项目并没有提供可视化的调用接口，而是更接近一种demo。可以考虑采用B/S架构，将其升级为真实可用的saas应用
+
 ## 引用
 ```
 YOLO算法: 
